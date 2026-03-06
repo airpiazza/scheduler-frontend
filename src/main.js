@@ -1,7 +1,8 @@
 import './style.css'
 import { setupCounter } from './counter.js'
+import { $ } from "jquery"
 
-document.querySelector('#app').innerHTML = `
+$('#app').html(`
   <div>
     <h1>Login</h1>
     <div class="card">
@@ -15,5 +16,6 @@ document.querySelector('#app').innerHTML = `
     </div>
   </div>
 `
+)
 
-setupCounter(document.querySelector('#counter'))
+setupCounter($('#counter'))
