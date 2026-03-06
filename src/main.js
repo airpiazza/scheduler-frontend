@@ -1,5 +1,5 @@
 import './style.css'
-import { setupCounter } from './counter.js'
+import { logIn } from './login.js'
 import { $ } from "jquery"
 
 $('#app').html(`
@@ -9,7 +9,7 @@ $('#app').html(`
       <form>
         <div class="form--group">
           <label for="username">Username</label>
-          <input type="text" id="name" />
+          <input type="text" id="username" name="user_name" />
         </div>
         <button id="counter" class="button--state-success" type="button">Log in</button>
       </form>
@@ -18,4 +18,4 @@ $('#app').html(`
 `
 )
 
-setupCounter($('#counter'))
+logIn($('#counter'), $('#username'))
