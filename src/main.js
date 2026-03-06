@@ -1,12 +1,17 @@
 import './style.css'
-import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
-    <h1>Hello Vite!</h1>
+    <h1>Login</h1>
     <div class="card">
-      <button id="counter" type="button"></button>
+      <form>
+        <div class="form--group">
+          <label for="username">Username</label>
+          <input type="text" id="name" />
+        </div>
+        <button id="counter" class="button--state-success" type="button">Log in</button>
+      </form>
     </div>
   </div>
 `

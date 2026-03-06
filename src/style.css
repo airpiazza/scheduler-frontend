@@ -54,10 +54,18 @@ button {
   transition: border-color 0.25s;
   justify-self: start;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.button--state-success {
+  background-color: #17803d;
+  color: white;
+}
+
+.form--group {
+  display: flex;
+  flex-direction: column;
 }
