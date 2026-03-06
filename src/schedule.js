@@ -9,7 +9,7 @@ export function schedule(username) {
       <fieldset>
         <legend>Select a time slot </legend>
         <div>
-            <input type="radio" id="nine_am" name="time_slot" value="nine_am" />
+            <input type="radio" id="nine_am" name="time_slot" value="nine_am" checked />
             <label for="nine_am">9:00 AM</label>
         </div>
         <div>
